@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<blood>
+    <tables>
+        <table id="19" name="meta_data">
+            <column name="id" id="20"/>
+            <column name="parent_id" id="24"/>
+            <column name="base_id" id="28"/>
+            <column name="code" id="32"/>
+            <column name="path" id="36"/>
+            <column name="name" id="40"/>
+        </table>
+        <table id="47" name="meta_data">
+            <column name="id" id="48"/>
+            <column name="name" id="52"/>
+        </table>
+        <table id="60" name="meta_mode_release">
+            <column name="id" id="61"/>
+            <column name="version" id="65"/>
+            <column name="name" id="69"/>
+        </table>
+    </tables>
+    <rses>
+        <rs id="11" name="RS_1">
+            <column name="id" id="12"/>
+            <column name="parent_id" id="13"/>
+            <column name="base_id" id="14"/>
+            <column name="code" id="15"/>
+            <column name="path" id="16"/>
+            <column name="name" id="17"/>
+            <column name="parent_name" id="18"/>
+        </rs>
+        <rs id="44" name="RS_2">
+            <column name="id" id="45"/>
+            <column name="name" id="46"/>
+        </rs>
+        <rs id="56" name="RS_3">
+            <column name="id" id="57"/>
+            <column name="version" id="58"/>
+            <column name="name" id="59"/>
+        </rs>
+    </rses>
+    <res>
+        <re id="0" name="RE_1">
+            <column name="id" id="1"/>
+            <column name="parent_id" id="2"/>
+            <column name="base_id" id="3"/>
+            <column name="code" id="4"/>
+            <column name="path" id="5"/>
+            <column name="name" id="6"/>
+            <column name="parent_name" id="7"/>
+            <column name="m_id" id="8"/>
+            <column name="m_version" id="9"/>
+            <column name="m_name" id="10"/>
+        </re>
+    </res>
+    <relations>
+        <relation id="23">
+            <source columnId="20" columnName="id" id="21"/>
+            <target columnId="12" columnName="id" id="22"/>
+        </relation>
+        <relation id="27">
+            <source columnId="24" columnName="parent_id" id="25"/>
+            <target columnId="13" columnName="parent_id" id="26"/>
+        </relation>
+        <relation id="31">
+            <source columnId="28" columnName="base_id" id="29"/>
+            <target columnId="14" columnName="base_id" id="30"/>
+        </relation>
+        <relation id="35">
+            <source columnId="32" columnName="code" id="33"/>
+            <target columnId="15" columnName="code" id="34"/>
+        </relation>
+        <relation id="39">
+            <source columnId="36" columnName="path" id="37"/>
+            <target columnId="16" columnName="path" id="38"/>
+        </relation>
+        <relation id="43">
+            <source columnId="40" columnName="name" id="41"/>
+            <target columnId="17" columnName="name" id="42"/>
+        </relation>
+        <relation id="51">
+            <source columnId="48" columnName="id" id="49"/>
+            <target columnId="45" columnName="id" id="50"/>
+        </relation>
+        <relation id="55">
+            <source columnId="52" columnName="name" id="53"/>
+            <target columnId="46" columnName="name" id="54"/>
+        </relation>
+        <relation id="64">
+            <source columnId="61" columnName="id" id="62"/>
+            <target columnId="57" columnName="id" id="63"/>
+        </relation>
+        <relation id="68">
+            <source columnId="65" columnName="version" id="66"/>
+            <target columnId="58" columnName="version" id="67"/>
+        </relation>
+        <relation id="72">
+            <source columnId="69" columnName="name" id="70"/>
+            <target columnId="59" columnName="name" id="71"/>
+        </relation>
+    </relations>
+</blood>
