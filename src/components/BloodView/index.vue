@@ -106,6 +106,24 @@ const renderGraph = () => {
   }
 };
 
+const onLoadXml = async () => {
+  const res = await fetch("/demo.xml");
+  const xml = await res.text();
+  xmlData.value = xml;
+  asideRef.value.jsonEditRef.setValue(xml);
+  const { tableData, midTableData, endTableData, relationData } = parseXml(
+    xmlData.value as string
+  );
+  lineageData.value = {
+    withProcessData: {
+      data: transformBoold({
+        tableData: [...tableData, ...midTableData, ...endTableData],
+        relationData,
+      }),
+    },
+  };
+};
+
 const showAside = computed(() => {
   return ["asdie+main", "asdie"].includes(layout.value);
 });
@@ -146,6 +164,7 @@ const _setOption = () => {
 
 onMounted(() => {
   window.addEventListener("beforeunload", _setOption);
+  onLoadXml();
   if (getOption()) {
     _getOption();
   } else {

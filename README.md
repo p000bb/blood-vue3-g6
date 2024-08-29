@@ -1,5 +1,13 @@
-# Vue 3 + TypeScript + Vite
+# 数据血缘
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## 基于Vue3 + ElementPlus + tailwindcss + antv/G6,支持文件上传解析xml文件生成数据血缘图。
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+### 项目运行
+```
+# 安装依赖
+pnpm install
+# 运行
+pnpm dev
+# 打包
+pnpm build
+```
