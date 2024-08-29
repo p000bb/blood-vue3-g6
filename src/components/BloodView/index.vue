@@ -107,7 +107,7 @@ const renderGraph = () => {
 };
 
 const onLoadXml = async () => {
-  const res = await fetch("/demo.xml");
+  const res = await fetch(`${import.meta.env.VITE_PUBLIC_PATH}/demo.xml`);
   const xml = await res.text();
   xmlData.value = xml;
   asideRef.value.jsonEditRef.setValue(xml);
