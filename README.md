@@ -11,3 +11,6 @@ pnpm dev
 # 打包
 pnpm build
 ```
+
+### 效果图
+![b42b3af3dc76d29c6c8661e8625c2ba](https://github.com/user-attachments/assets/fd75a4f8-df44-4ecd-9425-71bc7fa563b6)
